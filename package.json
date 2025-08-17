@@ -1,0 +1,56 @@
+{
+  "name": "helios-mvp",
+  "version": "1.0.0",
+  "description": "赫利俄斯项目MVP - 本我之镜：AI驱动的意识探索与演化沙盒",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "demo": "node demo.js",
+    "demo:channel": "npx ts-node src/simulation/ChannelExample.ts",
+    "demo:state": "npx ts-node src/core/InternalStateExample.ts",
+    "demo:database": "npx ts-node src/database/DatabaseExample.ts",
+    "demo:api": "npx ts-node src/lib/deepseek-test.ts"
+  },
+  "keywords": [
+    "AI",
+    "NPC",
+    "consciousness",
+    "belief-system",
+    "simulation"
+  ],
+  "author": "Mike & Team",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.24",
+    "@supabase/ssr": "^0.1.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "@types/js-yaml": "^4.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/uuid": "^9.0.0",
+    "ai": "^5.0.15",
+    "dotenv": "^16.3.0",
+    "js-yaml": "^4.1.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^5.0.0",
+    "uuid": "^9.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2"
+  }
+}
